@@ -25,29 +25,89 @@ nav {
   background-color: cadetblue;
   height: 2.5rem;
   width: 960px;
-  margin: 0 auto;
-  display: flex;
+  margin: 0 2rem;
+  display: inline-flex;
   font-size: 1rem;
+  position: relative;
+  color: white;
+  padding: 1rem;
+  align-items: center;
 
+}
+
+.logoname img {
+  height: 1.5rem;;
+  width: auto;
+  padding-right: 1rem;
 }
 
 .logoname {
-
+  display: flex;
+  flex-grow: 1;
 }
 
-.logoimage img {
-  height: 1.5rem;
-  width: auto;
+nav li {
+  display: inline-block;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+.logoname span {
+  display: inline-flex;
+  align-items: center;
+}
+
+/*Don't just look, see*/
 
 .see {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
   background-color: white;
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
+  margin-right: 5%;
+  margin-left: 35%;
 }
 
-.see span {
-  padding: 1.5rem 5rem;
+/* symb content */
+
+.symb.content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/*philointments*/
+
+.green span {
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+}
+
+.green {
+  border: 1px solid black;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 35%;
+
+}
+
+
+/*footer*/
+
+footer {
+  height: 10rem;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+footer span {
   
 }
