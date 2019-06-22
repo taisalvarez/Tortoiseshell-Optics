@@ -13,10 +13,12 @@ html {
 
  .bigimage {
    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+   width: auto;
    height: 30rem;
-   max-width: 100%;
-   background-size: cover;
-   flex-direction: row;
+   background-size: contain;
+   background-repeat: no-repeat;
+   border: 1px solid black;
+
 }
 
  /*nav*/
@@ -99,15 +101,17 @@ nav li {
 /*footer*/
 
 footer {
-  height: 10rem;
   background-color: azure;
+  padding: 4rem;
+  border: 1px solid black;
 }
 
 footer img {
   height: 1.5rem;
-  padding: 4rem 1rem 4rem 4rem;
+  padding-right: 1rem;
 }
 
-footer span {
-  
+.logofoot {
+  display: flex;
+  align-items: center;
 }
