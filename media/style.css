@@ -37,6 +37,8 @@ html {
 @media screen and (max-width: 940px) {
   .bigimage {
     background-size: cover;
+    background-position: 20%;
+    height: 22rem;
   }
 
 } /*this closes de 940px media*/
@@ -44,6 +46,7 @@ html {
 @media screen and (max-width: 400px) {
   .bigimage {
     background-size: cover;
+    height: 17rem;
   }
 } /*this closes de 400px media*/
 
@@ -137,7 +140,13 @@ nav .small {
 } /*this closes de 940px media*/
 
 @media screen and (max-width: 400px) {
-
+  .see {
+    display: flex;
+    line-height: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 9rem;
+  }
 } /*this closes de 400px media*/
 
 /* symb content */
@@ -147,9 +156,12 @@ nav .small {
   display: flex;
   height: 8rem;
   width: 960px;
-  margin: 3rem auto;
+  margin: 3.77rem auto;
   align-items: center;
   justify-content: center;
+  padding-top: 1.54rem;
+  padding-bottom: 1.54rem;
+  font-size: 0.77rem;
 }
 
 img.bww {
@@ -163,11 +175,27 @@ img.bw {
 }
 
 .middle {
+
 }
 
 span.middle {
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 940px) {
+    .symb {
+      justify-content: space-around;
+    }
+} /*this closes de 940px media*/
+
+@media screen and (max-width: 400px) {
+  .symb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+} /*this closes de 400px media*/
 
 /*philointments*/
 .philointments {
@@ -209,6 +237,27 @@ span.middle {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 940px) {
+
+} /*this closes de 940px media*/
+
+@media screen and (max-width: 400px) {
+  .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 0.77rem;
+  }
+
+  p.about {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+} /*this closes de 400px media*/
 
 /*footer*/
 
@@ -230,3 +279,16 @@ footer img {
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 400px) {
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+} /*this closes de 400px media*/
