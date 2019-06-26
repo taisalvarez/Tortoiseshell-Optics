@@ -5,9 +5,21 @@ html {
 }
 
 .container {
-  width: 1024px;
+  width: 960px;
   font-family: Helvetica;
 }
+
+@media screen and (max-width: 940px) {
+  .content {
+    max-width: 940px;
+  }
+} /*this closes de 940px media*/
+
+@media screen and (max-width: 4000px) {
+  .content {
+    max-width: 400px;
+  }
+} /*this closes de 400px media*/
 
  /*bigimage*/
 
@@ -15,19 +27,32 @@ html {
    background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
    width: auto;
    height: 30rem;
-   background-size: cover;
+   background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
    border: 1px solid black;
    /*padding-top: 1rem; I SEE NO DIFFERENCE*/
 }
 
+@media screen and (max-width: 940px) {
+  .bigimage {
+    background-size: cover;
+  }
+
+} /*this closes de 940px media*/
+
+@media screen and (max-width: 400px) {
+  .bigimage {
+    background-size: cover;
+  }
+} /*this closes de 400px media*/
+
 /*nav*/
 
 nav {
   background-color: cadetblue;
   height: 2.5rem;
-  width: 960px;
+  width: 900px;
   margin: 1rem auto;
   display: flex;
   font-size: 1rem;
@@ -60,7 +85,34 @@ nav li {
   align-items: center;
 }
 
+nav .small {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  nav {
+    flex-shrink: 1;
+    justify-content: space-between;
+  }
+} /*this closes de 940px media*/
+
+@media screen and (max-width: 400px) {
+  nav span{
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .small {
+    display: inline-flex;
+  }
+
+} /*this closes de 400px media*/
+
 /*Don't just look, see*/
+
 .see {
   display: inline-block; /*this i've copied*/
   border: 1px solid black;
@@ -70,15 +122,24 @@ nav li {
   background-color: white;
   padding: 1.5rem 5rem;
   margin-top: 10rem;
+  position: absolute;
+  transform: translateX(180%);
 }
 
+@media screen and (max-width: 940px) {
+    .see {
+      border: 1px solid black;
+      font-size: 1.33rem;
+      padding: 1.75rem 4rem;
+      margin-top: 5rem;
+      margin-right: 2rem;
+    }/*closes see*/
+} /*this closes de 940px media*/
 
-/*background-color: white;
-  padding: 0.75rem 5rem;
-  display: inline-block;
-  margin-top: 10rem;
-  margin-right: -2rem;
-  line-height: 2.4rem;*/
+@media screen and (max-width: 400px) {
+
+} /*this closes de 400px media*/
+
 /* symb content */
 
 .symb {
@@ -87,24 +148,49 @@ nav li {
   height: 8rem;
   width: 960px;
   margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
+}
+
+img.bww {
+  width: 3.5rem;
+  height: 4rem;
+}
+
+img.bw {
+  width: 5rem;
+  height: 3rem;
+}
+
+.middle {
+}
+
+span.middle {
+  margin-top: 1rem;
 }
 
 /*philointments*/
 .philointments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 960px;
+  margin: 0 auto;
   border: 1px solid black;
 }
 
 .about {
   border: 1px solid black;
-  width: 960px;
-  margin: 5rem;
+  margin: 5rem auto;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .green {
-  display: inline-flex;
-  max-width: 35%;
-  justify-content: space-between;
+  width: 35%;
 }
 
 .green span {
@@ -115,12 +201,12 @@ nav li {
   font-weight: bold;
   max-width: 10rem;
   max-height: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .green p {
   border: 1px solid black;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 1rem;
 }
 
 
